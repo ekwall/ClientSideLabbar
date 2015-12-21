@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientSideLabb1", "ClientSideLabb1\ClientSideLabb1.csproj", "{880D5F02-6EE9-42DA-BB0A-4F0823A7FDDF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExerciseOfPlenty13", "ClientSideLabb1\ExerciseOfPlenty13.csproj", "{880D5F02-6EE9-42DA-BB0A-4F0823A7FDDF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExerciseOfPlenty14", "ExerciseOfPlenty14\ExerciseOfPlenty14.csproj", "{59CA148B-C460-4136-BA42-D4510C75DE52}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{880D5F02-6EE9-42DA-BB0A-4F0823A7FDDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{880D5F02-6EE9-42DA-BB0A-4F0823A7FDDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{880D5F02-6EE9-42DA-BB0A-4F0823A7FDDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59CA148B-C460-4136-BA42-D4510C75DE52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59CA148B-C460-4136-BA42-D4510C75DE52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59CA148B-C460-4136-BA42-D4510C75DE52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59CA148B-C460-4136-BA42-D4510C75DE52}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

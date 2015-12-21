@@ -4,7 +4,6 @@
 // Inläsning ska ske tills siffran 0 har matats in.
 
 
-
 var targetDiv = document.getElementById('numberTargetDiv');
 var button = document.getElementById('btnReadNumber');
 var inputField = document.getElementById('readNumber');
