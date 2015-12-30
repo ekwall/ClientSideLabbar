@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExerciseOfPlenty13", "ClientSideLabb1\ExerciseOfPlenty13.csproj", "{880D5F02-6EE9-42DA-BB0A-4F0823A7FDDF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExerciseOfPlenty14", "ExerciseOfPlenty14\ExerciseOfPlenty14.csproj", "{59CA148B-C460-4136-BA42-D4510C75DE52}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExcerciseOfPlenty15", "ExcerciseOfPlenty15\ExcerciseOfPlenty15.csproj", "{D4F8AE8D-0BCC-4F77-A77C-1BBD9379E506}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{59CA148B-C460-4136-BA42-D4510C75DE52}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{59CA148B-C460-4136-BA42-D4510C75DE52}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{59CA148B-C460-4136-BA42-D4510C75DE52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4F8AE8D-0BCC-4F77-A77C-1BBD9379E506}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4F8AE8D-0BCC-4F77-A77C-1BBD9379E506}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4F8AE8D-0BCC-4F77-A77C-1BBD9379E506}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4F8AE8D-0BCC-4F77-A77C-1BBD9379E506}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
