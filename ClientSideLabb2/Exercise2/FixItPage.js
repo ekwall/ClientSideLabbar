@@ -36,3 +36,20 @@ Bonus exercises:
  and look at JS String, JS Number, JS Math and JS Date
 
 */
+
+
+var msg = '<h2>browser window</h2><p>width : ' + window.innerWidth + ' </p>';
+
+msg += '<p>scrolled: ' + window.pageXOffset + '</p>';
+msg += '<p>height: ' + window.innerHeight + '</p>';
+msg += ' <h2>history</h2><p>items : ' + window.history.length +  '</p>';
+msg += ' <h2>screen</h2><p>width : ' +window.screen.width +  '</ p> ' ;
+msg += ' <p>height : ' + window.screen.height + '</p>';
+msg += '<p> last moified: ' + document.lastModified + ' </p>';
+
+var el = document.getElementById('info' );
+el.innerHTML = msg;
+
+//window.open();
+//window.print();
+//alert('Current page : ' + window.location);
