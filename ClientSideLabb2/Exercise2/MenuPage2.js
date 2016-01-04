@@ -230,6 +230,19 @@ var subList = [
 
 addFoodToPage(subList, "Images/Subs.png", "subsPlace");
 
+var burgerList = [
+    new product("Hamburger", "Big", 5.55, "monday"),
+    new product("cheeseburger", "Big", 5.55, "tuesday"),
+    new product("BaconBurger", "Big", 5.55, "wednesday"),
+    new product("HawaiiBurger", "Big", 5.55, "Thursday"),
+    new product("veggie", "Big", 5.55, "friday"),
+    new product("special burger", "Big", 5.55, "saturday"),
+    new product("Pajas burger", "Big", 5.55, "sunday")
+
+];
+
+addFoodToPage(burgerList, "Images/Hamburger.png", "burgersPlace");
+
 /*
 
 6. GO to file FixIt.html
