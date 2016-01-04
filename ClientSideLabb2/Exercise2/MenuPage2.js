@@ -90,8 +90,6 @@ var drinkMonday = {
     dayOfTheWeek:"monday"
 };
 
-
-
 var drinktuesday = {
     name: "beer",
     size: "medium",
@@ -99,84 +97,141 @@ var drinktuesday = {
     dayOfTheWeek: "tuesday"
 };
 
+var drinkWednesday = {
+    name: "Champagne",
+    size: "medium",
+    price: 10.50,
+    dayOfTheWeek: "wednesday"
+};
+
+var drinkthursday = {
+    name: "milk",
+    size: "medium",
+    price: 10.50,
+    dayOfTheWeek: "thursday"
+};
+
+var drinkfriday = {
+    name: "water",
+    size: "medium",
+    price: 10.50,
+    dayOfTheWeek: "friday"
+};
+
+var drinksaturday = {
+    name: "coffee",
+    size: "medium",
+    price: 10.50,
+    dayOfTheWeek: "saturday"
+};
+
+var drinksunday = {
+    name: "au de toilet",
+    size: "medium",
+    price: 10.50,
+    dayOfTheWeek: "sunday"
+};
+
 drinklist[0] = drinkMonday;
 drinklist[1] = drinktuesday;
+drinklist[2] = drinkWednesday;
+drinklist[3] = drinkthursday;
+drinklist[4] = drinkfriday;
+drinklist[5] = drinksaturday;
+drinklist[6] = drinksunday;
 
-for (var i = 0; i < drinklist.length; i++) {
-    var drinkElement = document.getElementById("drinksPlace");
-    var articleElement = document.createElement("article");
-    var fieldsetElement = document.createElement("fieldset");
-    var legendElement = document.createElement("legend");
-    var h3Element = document.createElement("h3");
-    var spanElement = document.createElement("span");
-    var imgElement = document.createElement("img");
-    var divElement = document.createElement("div");
+addFoodToPage(drinklist, "Images/Drink.png", "drinksPlace");
 
-    legendElement.innerHTML = drinklist[i].dayOfTheWeek + " " + drinklist[i].name;
-    h3Element.innerHTML = drinklist[i].name;
-    imgElement.setAttribute("src", "Images/Drink.png");
-    divElement.setAttribute("id", drinklist[i].dayOfTheWeek);
-    divElement.setAttribute("class", "price");
-    divElement.innerHTML = drinklist[i].price;
+function addFoodToPage(listOfFood, imgPath, targetHtmlElement) {
 
+    for (var i = 0; i < listOfFood.length; i++) {
 
-    fieldsetElement.appendChild(legendElement);
-    fieldsetElement.appendChild(h3Element);
-    spanElement.appendChild(imgElement);
-    fieldsetElement.appendChild(spanElement);
-    fieldsetElement.appendChild(divElement);
-    articleElement.appendChild(fieldsetElement);
-    drinkElement.appendChild(articleElement);
+        var targetElement = document.getElementById(targetHtmlElement);
+        var articleElement = document.createElement("article");
+        var fieldsetElement = document.createElement("fieldset");
+        var legendElement = document.createElement("legend");
+        var h3Element = document.createElement("h3");
+        var spanElement = document.createElement("span");
+        var imgElement = document.createElement("img");
+        var divElement = document.createElement("div");
+
+        legendElement.innerHTML = listOfFood[i].dayOfTheWeek + " " + listOfFood[i].name;
+        h3Element.innerHTML = listOfFood[i].name;
+        imgElement.setAttribute("src", imgPath);
+        divElement.setAttribute("id", listOfFood[i].dayOfTheWeek);
+        divElement.setAttribute("class", "price");
+        divElement.innerHTML = listOfFood[i].price;
+
+        fieldsetElement.appendChild(legendElement);
+        fieldsetElement.appendChild(h3Element);
+        spanElement.appendChild(imgElement);
+        fieldsetElement.appendChild(spanElement);
+        fieldsetElement.appendChild(divElement);
+        articleElement.appendChild(fieldsetElement);
+        targetElement.appendChild(articleElement);
+    }
 }
 
-//var drinkElement = document.getElementById("drinksPlace");
-//var articleElement = document.createElement("article");
-//var fieldsetElement = document.createElement("fieldset");
-//var legendElement = document.createElement("legend");
-//var h3Element = document.createElement("h3");
-//var spanElement = document.createElement("span");
-//var imgElement = document.createElement("img");
-//var divElement = document.createElement("div");
 
-//legendElement.innerHTML = drink.dayOfTheWeek + " " + drink.name;
-//h3Element.innerHTML = drink.name;
-//imgElement.setAttribute("src", "Images/Drink.png");
-//divElement.setAttribute("id", drink.dayOfTheWeek);
-//divElement.setAttribute("class", "price");
-//divElement.innerHTML = drink.price;
-
-
-//fieldsetElement.appendChild(legendElement);
-//fieldsetElement.appendChild(h3Element);
-//spanElement.appendChild(imgElement);
-//fieldsetElement.appendChild(spanElement);
-//fieldsetElement.appendChild(divElement);
-//articleElement.appendChild(fieldsetElement);
-//drinkElement.appendChild(articleElement);
-
-
-
-
-
-
-function addDrinks() {
-
-}
-
-/*
-    <article>
-        <fieldset>
-            <legend>Tuesday Burger</legend>
-            <h3>Jum burger</h3>
-            <span>No image loaded</span>
-            <div class="price" id="tuseday">19.90</div>
-        </fieldset>
-    </article>
-*/
 
 /*
 4. add 7 pizzas to the page using Product.
+
+*/
+
+function product(name, size, price, dayOfTheWeek) {
+    this.name = name; 
+    this.size = size; 
+    this.price = price;
+    this.dayOfTheWeek = dayOfTheWeek;
+}
+
+
+
+
+var pizzaList = [
+    new product( "Vesuvio", "Big", 5.55, "monday" ),
+    new product("Calzone", "Big", 5.55, "tuesday"),
+    new product("Msushi", "Big", 5.55, "wednesday"),
+    new product("Hawaii", "Big", 5.55, "Thursday"),
+    new product("Colonial", "Big", 5.55, "friday"),
+    new product("HIF special", "Big", 5.55, "saturday"),
+    new product("Pajas", "Big", 5.55, "sunday")
+
+];
+
+var pizzaList = [
+    new product("Vesuvio", "Big", 5.55, "monday"),
+    new product("Calzone", "Big", 5.55, "tuesday"),
+    new product("Msushi", "Big", 5.55, "wednesday"),
+    new product("Hawaii", "Big", 5.55, "Thursday"),
+    new product("Colonial", "Big", 5.55, "friday"),
+    new product("HIF special", "Big", 5.55, "saturday"),
+    new product("Pajas", "Big", 5.55, "sunday")
+
+];
+
+addFoodToPage(pizzaList, "Images/Pizza.png", "pizzaPlace");
+
+/*
 5. add 7 subs to the page using Product.
+*/
+
+var subList = [
+    new product("Vesuvio", "Big", 5.55, "monday"),
+    new product("Calzone", "Big", 5.55, "tuesday"),
+    new product("Msushi", "Big", 5.55, "wednesday"),
+    new product("Hawaii", "Big", 5.55, "Thursday"),
+    new product("Colonial", "Big", 5.55, "friday"),
+    new product("HIF special", "Big", 5.55, "saturday"),
+    new product("Pajas", "Big", 5.55, "sunday")
+
+];
+
+addFoodToPage(subList, "Images/Subs.png", "subsPlace");
+
+/*
+
 6. GO to file FixIt.html
 */
 //DRINKS
