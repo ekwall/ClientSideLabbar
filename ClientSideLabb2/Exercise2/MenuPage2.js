@@ -236,7 +236,7 @@ var burgerList = [
     new product("BaconBurger", "Big", 5.55, "wednesday"),
     new product("HawaiiBurger", "Big", 5.55, "Thursday"),
     new product("veggie", "Big", 5.55, "friday"),
-    new product("special burger", "Big", 5.55, "saturday"),
+    new product("special", "Big", 5.55, "saturday"),
     new product("Pajas burger", "Big", 5.55, "sunday")
 
 ];

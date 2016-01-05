@@ -2,6 +2,18 @@
 
 For each of the following aplicable exercise below you should present a box on the page 
 with an alert that shows the result when the box is clicked!
+*/
+
+var paragraphs = document.getElementsByTagName("p");
+
+for (var i = 0; i < paragraphs.length; i++) {
+    paragraphs[i].addEventListener("click", function (e) {
+        alert("du klickade på en P tagg. " + this);
+    }, false);
+}
+
+
+/*
 
 ###Window object at page 124:###
 1. Link the script with FixIt.hmtl
@@ -64,16 +76,54 @@ arrayMsg += '<p><strong>split at "o": </strong>' + targetElementText.split('o') 
 arrayMsg += '<p><strong>replace "o" with " TJENAMITTBENA ": </strong>' + targetElementText.replace('o', ' TJENAMITTBENA ') + '</p>';
 
 
-stringArrayTarget.innerHTML = arrayMsg;
-
 /*
 
 ### String objects page 132: ###
 9. check if the 4th element in the array is a number
+*/
+
+arrayMsg += '<p><strong>check if the 4th element in the array is a number: </strong></p>';
+var array = ["masay", "hej", 1, "a", 4, 5, "muu"];
+arrayMsg += '<p> Array: ' + array + '</p>';
+arrayMsg += '<button id="arrayButton">Click to check 4:th number</button>';
+var isNum = !isNaN(array[3]);
+
+
+
+
+
+
+
+/*
 
 ### Math page 134: ###
 10. Round one of the numbers in the paragraph up/down
+
+*/
+var number = 4.567;
+var rounded = Math.round(number);
+
+
+arrayMsg += '<p><strong>Round one of the numbers in the paragraph up/down: </strong></p>';
+arrayMsg += '<p>4.567</p>';
+arrayMsg += '<p>rounded = ' + rounded + '</p>';
+
+/*
 11. replace the 3rd word with PI then roud it to the nearest integer
+
+*/
+
+var wordArray = ["Good", "day", "to", "you", "dear", "sire"];
+
+arrayMsg += '<p><strong>replace the 3rd word with PI then roud it to the nearest integer: </strong></p>';
+arrayMsg += '<p>wordarray -> ' + wordArray + '</p>';
+
+
+wordArray[2] = Math.PI;
+wordArray[2] = Math.round(wordArray[2]);
+
+arrayMsg += '<p>wordarray replaced -> ' + wordArray + '</p>';
+/*
 
 ### Date object###
 12. Calculate how many days it's until your birthday and present it.
@@ -86,5 +136,14 @@ Bonus exercises:
  and look at JS String, JS Number, JS Math and JS Date
 
 */
+
+stringArrayTarget.innerHTML = arrayMsg;
+
+
+
+var buttonElement = document.getElementById("arrayButton").addEventListener("click", function () {
+
+    alert("is it a number? " + isNum);
+});
 
 
