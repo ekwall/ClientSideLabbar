@@ -71,9 +71,11 @@ arrayMsg += '<p><strong>lastIndexOf i: </strong>' + targetElementText.lastIndexO
 
 arrayMsg += '<p><strong>subString between 10-20: </strong>' + targetElementText.substring(10, 20) + '</p>';
 
+
+
 arrayMsg += '<p><strong>split at "o": </strong>' + targetElementText.split('o') + '</p>';
 
-arrayMsg += '<p><strong>replace "o" with " TJENAMITTBENA ": </strong>' + targetElementText.replace('o', ' TJENAMITTBENA ') + '</p>';
+arrayMsg += '<p><strong>replace "o" with " TJENAMITTBENA ": </strong>' + targetElementText.replace('o', ' <span>TJENAMITTBENA</span> ') + '</p>';
 
 
 /*
@@ -127,7 +129,42 @@ arrayMsg += '<p>wordarray replaced -> ' + wordArray + '</p>';
 
 ### Date object###
 12. Calculate how many days it's until your birthday and present it.
+*/
+
+arrayMsg += '<p><strong>Calculate how many days its until your birthday and present it: </strong></p>';
+arrayMsg += '<p>birthday is 7th february</p>';
+var birthdayDate = new Date(1977, 1, 7, 12, 12, 12, 12);
+var todaysDate = new Date();
+birthdayDate.setFullYear(2016);
+var result = Math.abs(birthdayDate - todaysDate)
+var seconds = result / 1000;
+var hours = seconds / 3600;
+var days = hours / 24;
+var rounded = Math.round(days);
+
+arrayMsg += '<p>it is ' + rounded + ' days left to my birthday</p>';
+
+/*
 13. Calculate how many minutes old you are and present it.
+
+*/
+var todaysDate2 = new Date();
+
+var birthdayDate2 = new Date(1977, 1, 7, 12, 12, 12, 12);
+
+arrayMsg += '<p><strong>Calculate how many minutes old you are and present it: </strong></p>';
+arrayMsg += '<p>birthday is ' + birthdayDate2 + '</p>';
+
+
+var result2 = todaysDate2 - birthdayDate2;
+
+var hours2 = result2 / 3600000;
+
+var roundedHours2 = Math.round(hours2);
+arrayMsg += '<p>I am ' + roundedHours2 + ' hours old</p>';
+
+
+/*
 
 Bonus exercises:
 ### Demo page 141:###
@@ -146,4 +183,4 @@ var buttonElement = document.getElementById("arrayButton").addEventListener("cli
     alert("is it a number? " + isNum);
 });
 
-
+document.getElementById("showChanged").addEventListener("click", function (e) { });
