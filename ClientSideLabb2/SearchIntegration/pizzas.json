@@ -1,0 +1,67 @@
+﻿[
+            {
+            "name": "Vesuvio",
+            "descripton": "A tasty original pizza",
+            "day": "Monday",
+            "price": "19.90",
+            "color": "red",
+            "image": "Images/Pizza.png",
+            "type": "pizza"
+        },
+        {
+            "name": "Caprischåsa",
+            "descripton": "A tasty original Pizza",
+            "day": "Tuesday",
+            "price": "15.90",
+            "color": "red",
+            "image": "Images/Pizza.png",
+            "type": "pizza"
+        },
+        {
+            "name": "Hawaii",
+            "descripton": "A tasty original Pizza",
+            "day": "Wednesday",
+            "price": "2.90",
+            "color": "red",
+            "image": "Images/Pizza.png",
+            "type": "pizza"
+
+        },
+        {
+            "name": "Veggie pizza",
+            "descripton": "a veggie for our green Pizza",
+            "day": "Thursday",
+            "price": "23.90",
+            "color": "red",
+            "image": "Images/Pizza.png",
+            "type": "pizza"
+        },
+        {
+            "name": "Meatpizza",
+            "descripton": "This does not taste good",
+            "day": "Friday",
+            "price": "3.90",
+            "color": "red",
+            "image": "Images/Pizza.png",
+            "type": "pizza"
+        },
+        {
+            "name": "Sallad pizza",
+            "descripton": "Sallad and such Pizza",
+            "day": "Saturday",
+            "price": "13.90",
+            "color": "red",
+            "image": "Images/Pizza.png",
+            "type": "pizza"
+        },
+        {
+            "name": "Air Pizza",
+            "descripton": "lightweight burger of air",
+            "day": "Sunday",
+            "price": "17.90",
+            "color": "red",
+            "image": "Images/Pizza.png",
+            "type": "pizza"
+        }
+        ]
+  

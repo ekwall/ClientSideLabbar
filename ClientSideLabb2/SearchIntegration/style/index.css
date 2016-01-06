@@ -6,3 +6,25 @@ div.header{
     background-color: black;
     margin-bottom: 15px;
 }
+
+ul.searchresults {
+    list-style: none;
+}
+
+
+
+legend.brown{
+    background-color: brown !important;
+}
+
+legend.white{
+    background-color: whitesmoke !important;
+}
+
+legend.gray{
+    background-color: gray !important;
+}
+
+legend.red{
+    background-color: red !important;
+}

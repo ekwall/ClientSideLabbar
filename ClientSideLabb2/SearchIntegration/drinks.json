@@ -1,0 +1,67 @@
+﻿[
+             {
+            "name": "Milk",
+            "descripton": "A tasty original sub",
+            "day": "Monday",
+            "price": "19.90",
+            "color": "gray",
+            "image": "Images/Drink.png",
+            "type": "drink"
+        },
+        {
+            "name": "Coke",
+            "descripton": "A tasty original Sub",
+            "day": "Tuesday",
+            "price": "15.90",
+            "color": "gray",
+            "image": "Images/Drink.png",
+            "type": "drink"
+        },
+        {
+            "name": "pepsi",
+            "descripton": "A tasty original Sub",
+            "day": "Wednesday",
+            "price": "2.90",
+            "color": "gray",
+            "image": "Images/Drink.png",
+            "type": "drink"
+
+        },
+        {
+            "name": "Veggie drink",
+            "descripton": "a veggie for our green sub",
+            "day": "Thursday",
+            "price": "23.90",
+            "color": "gray",
+            "image": "Images/Drink.png",
+            "type": "drink"
+        },
+        {
+            "name": "meat drink",
+            "descripton": "This does not taste good",
+            "day": "Friday",
+            "price": "3.90",
+            "color": "gray",
+            "image": "Images/Drink.png",
+            "type": "drink"
+        },
+        {
+            "name": "Sallad drink",
+            "descripton": "Sallad and such Pizza",
+            "day": "Saturday",
+            "price": "13.90",
+            "color": "gray",
+            "image": "Images/Drink.png",
+            "type": "drink"
+        },
+        {
+            "name": "Air drink",
+            "descripton": "lightweight burger of air",
+            "day": "Sunday",
+            "price": "17.90",
+            "color": "gray",
+            "image": "Images/Drink.png",
+            "type": "drink"
+        }
+]
+  

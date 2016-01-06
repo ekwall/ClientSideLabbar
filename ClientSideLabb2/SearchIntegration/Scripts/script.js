@@ -1,57 +1,60 @@
 ﻿$(document).ready(function () {
-    startup();
+    filter();
+    $("#search").keyup(function (e) {
+        filter();
+      
+    });
+
+    $(".typeCheckbox").change(function (e) {
+        resetPage();
+        filter();
+    });
+
 });
 
-function startup() {
-    $("#search").keyup(function (e) {
-        var searchField = $("#search").val();
-
-        var myExp = new RegExp(searchField, "i");
-        
-        $.getJSON('food.json', function (data) {
-            var output = "<ul class='searchresults'>";
-
-            $.each(data, function (key, val) {
-                
-                output += "<li>";
-                output += "<p>" + val.name + "</p>";
-                output += "</li>";
-
-            });
-
-            output += "</ul>";
-            $("#target").html(output);
-                
-            });
-
-        });
-   
-    
+function resetPage() {
+    $("#target").html("");
 }
 
-//$(document).ready(function () {
-//    $("#search").keyup(function () {
-//        var searchField = $("#search").val();
-//        var meExp = new RegExp(searchField, "i");
-//        $.getJSON('wt_data.json', function (data) {
-//            var output = "<ul class='searchresults'>";
+function filter() {
+    console.log("inne");
+    $typeFields = $(".typeCheckbox");
+    
+    var output = "<div>";
+    $.each($typeFields, function () {
+        if (this.checked) {
+            
+            $.getJSON($(this).val() + '.json', function (data) {
+            var searchField = $("#search").val();
+            var myExp = new RegExp(searchField, "i");
 
-//            $.each(data, function (key, val) {
-//                //Dags att sortera:
-//                if ((val.name.search(meExp) !== -1) ||
-//                    (val.about.search(meExp) !== -1)) {
-//                    output += "<li>";
-//                    output += "<p>" + val.name + "<b> " + val.master_degree + "</b>" + "</p>";
-//                    output += '<img src="wt_images/' + val.url_image;
-//                    output += '" alt="' + val.name + '"' + '"/>';
-//                    output += "<p>" + val.about + "</p>";
-//                    output += "</li>";
-//                }
+            $.each(data, function (key, val) {
+                if ((val.name.search(myExp) !== -1)||
+                    (val.descripton.search(myExp) !== -1) ||
+                    (val.day.search(myExp) !== -1)) {
+                            output += "<div class='col-md-3 foodContainer'>"
+                            output += "<article>";
+                            output += "<fieldset>";
+                            output += "<legend class='" + val.color + "'>" + val.day + "</legend>";
+                            output += "<h3>" + val.name + "</h3>";
+                            output += "<span><img src='" + val.image + "'/></span>";
+                            output += '<div class="price" id="' + val.day + '">' + val.price + '</div>';
+                            output += "</fieldset>";
+                            output += "</article>";
+                            output += "</div>";
 
-//            });
-//            output += "</ul>";
-//            $("#target").html(output);
-//        });
+                }
 
-//    });
-//});
+                        
+
+            });
+           $("#target").html(output);
+    }); 
+
+             
+  }
+});
+    
+    
+    
+}

@@ -11,21 +11,29 @@
     <script src="Scripts/bootstrap.min.js"></script>
     <script src="Scripts/script.js"></script>
     <link href="style/index.css" rel="stylesheet" />
+    <link href="style/MenuPage.css" rel="stylesheet" />
 </head>
 <body>
     <div class="container">
         <div class="row">
-            <div class="cold-md-12 header"></div>
+            
             <div class="col-md-12">
                 <div class="col-md-6">
                     <label for="search">Search for food!</label>
                     <input id="search" placeholder="search junkfood" />
+                    <div class="checkbox">
+                        <label><input name="burger" id="burgerCheck" class="typeCheckbox" type="checkbox" checked="checked" value="burgers">Burgers</label>
+                        <label><input name="pizza" id="pizzaCheck" class="typeCheckbox" type="checkbox" checked="checked" value="pizzas">Pizzas</label>
+                        <label><input name="sub" id="pizzaCheck" class="typeCheckbox" type="checkbox" checked="checked" value="subs">Subs</label>
+                        <label><input name="drink" id="pizzaCheck" class="typeCheckbox" type="checkbox" checked="checked" value="drinks">Drinks</label>
+                    </div>
                 </div>
             </div>
             <div id="target" class="col-md-12">
                 
             </div>
         </div>
-    </div>
+    </div>-
+   
 </body>
 </html>

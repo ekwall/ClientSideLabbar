@@ -68,6 +68,10 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Images\Drink.png" />
+    <Content Include="Images\Hamburger.png" />
+    <Content Include="Images\Pizza.png" />
+    <Content Include="Images\Subs.PNG" />
     <Content Include="index.html" />
     <Content Include="packages.config" />
     <Content Include="food.json" />
@@ -79,6 +83,9 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\bootstrap.min.css.map" />
     <Content Include="Content\bootstrap.css.map" />
+    <Content Include="burgers.json" />
+    <Content Include="pizzas.json" />
+    <Content Include="subs.json" />
     <None Include="Scripts\jquery-2.1.0.intellisense.js" />
     <None Include="Scripts\jquery-2.1.0-vsdoc.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -86,6 +93,7 @@
     <Content Include="Scripts\jquery-2.1.0.js" />
     <Content Include="Scripts\jquery-2.1.0.min.js" />
     <Content Include="Scripts\jquery-2.1.0.min.map" />
+    <Content Include="drinks.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -96,6 +104,7 @@
   <ItemGroup>
     <Content Include="Scripts\script.js" />
     <Content Include="style\index.css" />
+    <Content Include="style\MenuPage.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

@@ -1,0 +1,67 @@
+﻿[
+            {
+            "name": "Sub zero",
+            "descripton": "A tasty original sub",
+            "day": "Monday",
+            "price": "19.90",
+            "color": "white",
+            "image": "Images/Subs.png",
+            "type": "sub"
+        },
+        {
+            "name": "Sub with cheese",
+            "descripton": "A tasty original Sub",
+            "day": "Tuesday",
+            "price": "15.90",
+            "color": "white",
+            "image": "Images/Subs.png",
+            "type": "sub"
+        },
+        {
+            "name": "Sub with ham",
+            "descripton": "A tasty original Sub",
+            "day": "Wednesday",
+            "price": "2.90",
+            "color": "white",
+            "image": "Images/Subs.png",
+            "type": "sub"
+
+        },
+        {
+            "name": "Veggie sub",
+            "descripton": "a veggie for our green sub",
+            "day": "Thursday",
+            "price": "23.90",
+            "color": "white",
+            "image": "Images/Subs.png",
+            "type": "sub"
+        },
+        {
+            "name": "meat sub",
+            "descripton": "This does not taste good",
+            "day": "Friday",
+            "price": "3.90",
+            "color": "white",
+            "image": "Images/Subs.png",
+            "type": "sub"
+        },
+        {
+            "name": "Sallad sub",
+            "descripton": "Sallad and such Pizza",
+            "day": "Saturday",
+            "price": "13.90",
+            "color": "white",
+            "image": "Images/Subs.png",
+            "type": "sub"
+        },
+        {
+            "name": "Air sub",
+            "descripton": "lightweight burger of air",
+            "day": "Sunday",
+            "price": "17.90",
+            "color": "white",
+            "image": "Images/Subs.png",
+            "type": "sub"
+        }
+]
+  

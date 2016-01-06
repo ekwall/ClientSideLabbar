@@ -1,0 +1,67 @@
+﻿[
+            {
+                "name": "Hamburger",
+                "descripton": "A tasty original burger",
+                "day": "Monday",
+                "price": "19.90",
+                "color": "brown",
+                "image": "Images/Hamburger.png",
+                "type": "burger"
+            },
+            {
+                "name": "Cheeseburger",
+                "descripton": "A tasty original cheeseburger",
+                "day": "Tuesday",
+                "price": "15.90",
+                "color": "brown",
+                "image": "Images/Hamburger.png",
+                "type": "burger"
+            },
+            {
+                "name": "Baconburger",
+                "descripton": "A tasty original baconburger",
+                "day": "Wednesday",
+                "price": "2.90",
+                "color": "brown",
+                "image": "Images/Hamburger.png",
+                "type": "burger"
+
+            },
+            {
+                "name": "Veggieburger",
+                "descripton": "a veggie for our green friends",
+                "day": "Thursday",
+                "price": "23.90",
+                "color": "brown",
+                "image": "Images/Hamburger.png",
+                "type": "burger"
+            },
+            {
+                "name": "BaconAndHam",
+                "descripton": "This does not taste good",
+                "day": "Friday",
+                "price": "3.90",
+                "color": "brown",
+                "image": "Images/Hamburger.png",
+                "type": "burger"
+            },
+            {
+                "name": "SalladAndBacon",
+                "descripton": "Sallad and such",
+                "day": "Saturday",
+                "price": "13.90",
+                "color": "brown",
+                "image": "Images/Hamburger.png",
+                "type": "burger"
+            },
+            {
+                "name": "AirBurger",
+                "descripton": "lightweight burger of air",
+                "day": "Sunday",
+                "price": "17.90",
+                "color": "brown",
+                "image": "Images/Hamburger.png",
+                "type": "burger"
+            }
+        ]
+  
