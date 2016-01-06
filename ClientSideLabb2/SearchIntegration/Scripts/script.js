@@ -2,7 +2,6 @@
     filter();
     $("#search").keyup(function (e) {
         filter();
-      
     });
 
     $(".typeCheckbox").change(function (e) {
@@ -17,7 +16,6 @@ function resetPage() {
 }
 
 function filter() {
-    console.log("inne");
     $typeFields = $(".typeCheckbox");
     
     var output = "<div>";
