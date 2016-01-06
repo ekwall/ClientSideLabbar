@@ -1,0 +1,11 @@
+﻿{
+  "burgers": {
+    "name": "Hamburger",
+    "size": "XL",
+    "price": 15.55,
+    "day": "Monday"
+  },
+  "pizza": { },
+  "drinks": { },
+  "subs": {}
+}
