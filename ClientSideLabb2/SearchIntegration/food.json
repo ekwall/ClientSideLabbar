@@ -1,11 +1,30 @@
-﻿{
-  "burgers": {
-    "name": "Hamburger",
-    "size": "XL",
-    "price": 15.55,
-    "day": "Monday"
-  },
-  "pizza": { },
-  "drinks": { },
-  "subs": {}
-}
+﻿[
+        {
+            "name": "Hamburger",
+            "Descriptopm": "A tasty original burger"
+        },
+        {
+            "name": "Cheeseburger",
+            "Descriptopm": "A tasty original cheeseburger"
+        },
+        {
+            "name": "Baconburger",
+            "Descriptopm": "A tasty original baconburger"
+        },
+        {
+            "name": "Veggieburger",
+            "Descriptopm": "a veggie for our green friends"
+        },
+        {
+            "name": "BaconAndHam",
+            "Descriptopm": "This does not taste good"
+        },
+        {
+            "name": "SalladAndBacon",
+            "Descriptopm": "Sallad and such"
+        },
+        {
+            "name": "AriBurger",
+            "Descriptopm": "lightweight burger of air"
+        }
+    ]
