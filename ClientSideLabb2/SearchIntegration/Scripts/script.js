@@ -17,8 +17,8 @@ function resetPage() {
 
 function filter() {
     $typeFields = $(".typeCheckbox");
-    
     var output = "<div>";
+
     $.each($typeFields, function () {
         if (this.checked) {
             
